@@ -62,7 +62,7 @@ class Model:
                 punto_interesse.escursioni.add(escursione)
 
 
-    def genera_pacchetto(self, id_parco: str, max_giorni: int = None, max_budget: float = None):
+    def genera_pacchetto(self, id_parco: str, max_giorni: int, max_budget: float):
         """
         Calcola il pacchetto di escursioni ottimale per un parco rispettando i vincoli di durata, budget e punti di interesse unici.
         :param id_parco: id del parco
